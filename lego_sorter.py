@@ -29,8 +29,6 @@ app = Flask(__name__)
 Image = camera(Teachable.AI())
 
 
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
