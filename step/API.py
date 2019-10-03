@@ -93,7 +93,7 @@ class GrblComm:
         self.ser.close()
 
 
-# comm = GrblComm("COM10", 250000,  True)
+# comm = GrblComm("/dev/ttyUSB0", 250000,  True)
 # time.sleep(1)
 # comm.rapidMovement("X4 F4")
 # time.sleep(7)
