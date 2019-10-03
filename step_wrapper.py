@@ -12,7 +12,7 @@ class Step:
             angle = 4 - (input_ang/360)
         if input_ang < 180:
             angle = 4 + (input_ang/360)
-        self.comm.rapidMovement("X" + angle + "F4")
+        self.comm.rapidMovement("X" + angle + " F4")
 
 
 
