@@ -5,7 +5,6 @@ values = {1 : "a", 2 : "d", 3 : "w", 4: "s"}
 
 
 
-
 def angle_gen(length):
     angle = 360 / length
     return(angle)
