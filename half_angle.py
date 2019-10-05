@@ -17,6 +17,7 @@ current_degree = 0
 def change(input_ang):
     global current_degree
     print(input_ang, "input")
+    
     if current_degree != input_ang:
         change = 0 
         diff = (current_degree - input_ang)%360
@@ -34,6 +35,7 @@ def change(input_ang):
         print(current_degree, "current")
     else:
         print("return angle")
+        print(current_degree, "current")
 
 
 def change_angle(input_ang):
