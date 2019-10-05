@@ -16,17 +16,30 @@ class Step:
 current_degree = 0
 def change(input_ang):
     global current_degree
+    print(input_ang, "input")
     if current_degree != input_ang:
         change = 0 
         diff = (current_degree - input_ang)%360
         if diff < 0:
             change = 1
+        elif diff == 0:
+            change = 0
         else:
             change = -1
         if abs(diff) > 180:
             change = 0 - change
         current_degree += change
-        print(current_degree)
+        if change == 0:
+            print("return angle")
+        print(current_degree, "current")
+    else:
+        print("return angle")
+
+
+def change_angle(input_ang):
+    pass
+    
+
 
 
 
@@ -45,7 +58,7 @@ while True:
             
             mult = angle_gen(len(values))
             angle = key * mult
-            print(angle, "is pressed")
+            #print(angle, "is pressed")
             #step.set_angle(angle)
             change(angle)
     if keyboard.read_key() == "p":
